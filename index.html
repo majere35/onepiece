@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>One Piece Bölüm Takipçisi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="wp2632332.jpg" alt="One Piece Logo" class="main-logo">
+        </div>
+        <div class="progress-section">
+            <div class="progress-stats">
+                <span id="watched-count">0</span> / 1156 Bölüm
+                <span id="progress-percent">0%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="search-section">
+            <div class="search-box">
+                <input type="number" id="episode-search" placeholder="Bölüm ara... (örn: 500)">
+                <button id="jump-btn">Git</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="episode-list-container" id="episode-list">
+        <!-- Episodes will be rendered here by JS -->
+    </main>
+
+    <button id="scroll-to-current" class="fab oculto">📍</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
